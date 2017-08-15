@@ -37,3 +37,6 @@ n = 10^15;
 
 % Infinity is 
 1/Inf
+
+% Creando una matriz
+c = [1,2,3;4,5,6;7,8,9]

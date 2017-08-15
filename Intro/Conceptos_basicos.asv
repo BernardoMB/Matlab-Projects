@@ -70,6 +70,5 @@ m = zeros(8,7)
 v = [-2,1,0,4,1,2,3,4,5,6]
 w(3:8,6)=v(5:10)
 
-% Save matrix to a file
-save MatrixDatos w -ascii
+% Save ma
 

@@ -1,0 +1,21 @@
+- Para mostrar el directorio: pwd
+
+- Para limpiar la pantalla: clc
+
+- Para cambiar el directorio de trabajo se utiliza "cd"
+
+- Es case sensitive
+
+- Para desplegar 16 dígitos con notación exponencial: format long e
+
+- Si queremos regresar al formato default: format
+
+  PUNTO FLOTANTE
+
+- El número más grande positivo que es posible representar en el SPFN: realmax
+
+- El número más grande positivo que es posible representar en el SPFN: realmax
+
+- Epsilon de la máquina: eps(1/2)
+
+

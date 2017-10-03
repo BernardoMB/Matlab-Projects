@@ -1,0 +1,26 @@
+% funcion para resolver un sistema con sustitucion hacia atras.
+% ENTRADA: A = Matriz invertible triangular superior
+% ENTRADA: b = vector de  resultantes
+% SALIDA: x = vector solucion del sistema
+function [x] = sustitucionHaciaAtras(A,b)
+    % Validando a la matriz A.
+    [nrow, ncol] = size(A);
+    if (nrow ~= ncol)
+        disp('Error de sustitucion hacia atras: se requiere una matriz cuadrada');
+        return;
+    end
+    % Validando al vector de resultantes b.
+    nb = length(b);
+    if(nrow ~= nb)
+        disp('Error de sustitucion hacia atras: se requiere que el vector de resultantes tenga el mismo numero de renglones que A')
+        return;
+    end
+    % Hay que inicializar el vector resultante.
+    % En el vector x se iran guardando los valores del vector solucion.
+    x=zeros(nrow,1);
+    % Hallando los valores del vector solucion.
+    for j = nrow : -1 :1
+        x(j)=b(j)/A(j,j);
+        b(1:j-1)=b(1:j-1)-A(1:j-1,j)*x(j);
+    end
+end
